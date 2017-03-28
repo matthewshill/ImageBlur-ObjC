@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="2">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bWr-mS-aPO"/>
+                        <viewControllerLayoutGuide type="bottom" id="4Nh-5z-DQ5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wre-fT-kXi">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="331" id="Tt5-Db-YaV"/>
+                                </constraints>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="OgK-6D-QuO">
+                                <connections>
+                                    <action selector="sliderChanged:" destination="2" eventType="valueChanged" id="Gfz-cm-MOa"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wre-fT-kXi" firstAttribute="top" secondItem="3" secondAttribute="top" id="L25-Fb-am9"/>
+                            <constraint firstAttribute="trailing" secondItem="OgK-6D-QuO" secondAttribute="trailing" constant="20" symbolic="YES" id="RBb-9k-YGK"/>
+                            <constraint firstAttribute="bottom" secondItem="OgK-6D-QuO" secondAttribute="bottom" constant="79" id="S78-cU-Cef"/>
+                            <constraint firstItem="OgK-6D-QuO" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" id="asz-19-BEG"/>
+                            <constraint firstItem="wre-fT-kXi" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="dQJ-eM-i5X"/>
+                            <constraint firstItem="wre-fT-kXi" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" id="uCX-EP-7u7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgView" destination="wre-fT-kXi" id="SDe-uT-5MD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
